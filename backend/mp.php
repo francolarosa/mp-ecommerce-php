@@ -70,7 +70,7 @@ $preference->payment_methods = array(
   ),
   "installments" => 6
 );
-$preference->notification_url = getURL() . "backend/notification/?source_news=ipn";
+$preference->notification_url = getURL() . "backend/notification/index.php";
 $preference->external_reference = "franco.hugo.larosa@gmail.com";
 
 
