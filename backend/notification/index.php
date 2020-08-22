@@ -1,9 +1,9 @@
 <?php
 
 
-    $json_event = file_get_contents('php://input', true);
+    $json_event = stream_get_contents(STDIN);
     $json_file = fopen("pago.json","w");
-    fwrite($json_file,json_encode($json_event));
+    fwrite($json_file,$json_event);
 
 
 ?>
